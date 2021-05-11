@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFC ICT Program</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Css/signup.css" type="text/css">
+    <script src="./Js/signup.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div>
+            <img src="./Img/logo.png" class="mx-auto d-block" alt="Logo">
+        </div>
+        <h3 align="center">CFC ICT Program</h3>
+        <p align="center" class="signup">Sign Up</p>
+        <br>
+        <form action="#" onsubmit="signup(); return false;" id="signup">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="fname">First Name:</label>
+                  <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                </div>
+                <div class="col-sm-6">
+                  <label for="lname">Last Name:</label>
+                  <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="pswd">Password:</label>
+                  <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="col-sm-6">
+                  <label for="cpswd">Confirm:</label>
+                  <input type="password" class="form-control" id="cpswd" placeholder="Enter Confirm" name="cpswd">
+                </div>
+            </div>
+            <div class="form-group" align="center">
+            <button type="reset" class="btn btn-primary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            
+          </div>
+          <div class="form-group" align="center">
+            <p>Already have an account? <a href="index.html" target="_self">SingIn Now</a></p>
+          </div>
+        </form>
+      </div> 
+</body>
+</html>

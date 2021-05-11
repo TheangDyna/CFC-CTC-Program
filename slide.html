@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFC ICT Program</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/slide.css" type="text/css">
+</head>
+<body>
+    <img src="./Img/logo.png" class="mx-auto d-block" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Course
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="slide.html">Lesson Slide</a>
+                    <a class="dropdown-item" href="video.html">Lesson Video</a>
+                    <a class="dropdown-item" href="Challenge.html">Lesson Challenge</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                School Site
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Hun Sen Prasat Bakong High School</a>
+                <a class="dropdown-item" href="#">Aranh Sakor CFC High School</a>
+                <a class="dropdown-item" href="#">Bakong Motwani JHS</a>
+                <a class="dropdown-item" href="#">Aranh Cuthbert CFC ICT Program</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="main">
+          <div class="row ">
+            <div class="col-sm-4">
+              <div class="tab">
+                <button class="tablinks" onclick="openCourse(event, 'Computer')" id="defaultOpen">Computer Basic</button>
+                <button class="tablinks" onclick="openCourse(event, 'Microsoft')">Microsoft Office</button>
+                <button class="tablinks" onclick="openCourse(event, 'Living')">Living In An Online World</button>
+                <button class="tablinks" onclick="openCourse(event, 'Game')">Game Development</button>
+                <button class="tablinks" onclick="openCourse(event, 'Global')">Global Challenge</button>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div id="Computer" class="tabcontent">
+                <button class="accordionSection">Computer Hardware and Software</button>
+                <div class="panel">
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1yL-x3avbhdxg-0pjPHCK33FvLHFamtq6/edit#slide=id.p1" target="_blank" name="computer">Computer Hardware and Software</a>
+                  </div>
+                </div>
+
+                <button class="accordionSection">Practice on Typing</button>
+                <div class="panel">
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1EIACUxdmptrIONIBjo4a57gAhIBAiLw9/edit#slide=id.p1" target="_blank" name="computer">Practice on Typing</a>
+                  </div>
+                </div>
+
+                <button class="accordionSection">Microsoft Office Word</button>
+                <div class="panel">
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1-Cz2MerShIIvxXwgDNjGa1eqLRVqbVZK/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office Word</a>
+                  </div>
+                  <hr>
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1nKXsUa6zHOO_MJehNk74n2L-cxiIPdBUVNlUg5IaccA/edit#slide=id.p" target="_blank" name="computer">Microsoft Office Word 2</a>
+                  </div>
+                </div>
+                <button class="accordionSection">Microsoft Office Excel</button>
+                <div class="panel">
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1sNXKHbVhpchtL0B0I5Z8RY1HLWXtpTmu/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office Excel</a>
+                  </div>
+                  <hr>
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1qEVXvjzu6qHUaz6lzdepQJoXpB-xFxZFIUxz_tjE6i8/edit#slide=id.p" target="_blank" name="computer">Microsoft Office Excel 2</a>
+                  </div>
+                </div>
+
+                <button class="accordionSection">Microsoft Office PowerPoint</button>
+                <div class="panel">
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1Fu69MGUbJcZZTEpKWQzINUVMA6orLfVI/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office PowerPoint</a>
+                  </div>
+                  <hr>
+                  <div class="inPanel">
+                    <i class="fas fa-desktop"></i>
+                    <a href="https://docs.google.com/presentation/d/1JIbCL73Od3zoKLHAqEbM3t4ARAHcnUjAwrWGC2igbmk/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office PowerPoint 2</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="Microsoft" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
+              </div>
+              
+              <div id="Living" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+
+              <div id="Game" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+
+              <div id="Global" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+<script src="./Js/slide.js"></script>
+</html>
