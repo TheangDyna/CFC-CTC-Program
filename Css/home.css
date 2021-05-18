@@ -10,6 +10,9 @@ body{
     padding: 10px 0;
     height: 100px;
 }
+.sticky-top{
+    box-shadow: 0 5px 5px black;
+}
 .collapse ul li a{
     margin-right: 30px;
 }

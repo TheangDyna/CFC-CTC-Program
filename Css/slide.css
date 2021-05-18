@@ -3,114 +3,117 @@
     margin: 0;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
 }
-body{
-    height: 1500px;
-}
-.main
-{
-    width: 90%;
-    margin: 0 auto;
-}
 .mx-auto{
     padding: 10px 0;
     height: 100px;
 }
+.sticky-top{
+    box-shadow: 0 5px 5px black;
+    z-index: 9;
+}
 .collapse ul li a{
     margin-right: 30px;
 }
+.main{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 70px ;
+}
 .row{
-    width: 100%;
     margin: 0;
 }
-.col-sm-4{
+.col-sm-6{
     padding: 0;
+    height: 450px;
+    overflow: auto;
 }
-.col-sm-8{
-    padding: 0;
-}
-.tab{
-    float: left;
-    background-color: #eee;
-    width: 100%;
-}
-.tab button{
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 18px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
+.section{
+    box-shadow: 2px 5px 8px 5px rgba(0,0,0,0.2);
     transition: 0.3s;
-    font-size: 17px;
+    padding: 0;
+    margin-bottom: 100px;
 }
-.tab button:hover{
-    background-color: #ddd;
-}
-.tab button.active{
-    background-color: #ccc;
-}
-.tabcontent{
-    float: left;
+.courseImg{
+    background-size: cover;
+    background-position: center;
+    height: 400px;
     width: 100%;
-    border-left: none;
-}
-.accordionSection{
-    background-color: #eee;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 17px;
-    transition: 0.4s;
 
-}
-.accordionSection:focus{
-    outline: none;
-}
-  
-.activeSection, .accordionSection:hover {
-    background-color: #ccc;
-}
-  
-.accordionSection:after {
-    content: '\002B';
-    font-size: 17px;
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-.activeSection:after{
-    content: "\2212";
-  }
-.panel{
-    padding: 0px 50px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-.inPanel{
-    margin: 20px 0;
-}
-.inPanel i{
+} 
+.title{
+    padding: 10px;
+    height: 50px;
     font-size: 20px;
-    margin-right: 20px;
+    text-align: center;
+    background: #E5E7E9;
+    color: black;
+    overflow: hidden;
 }
-hr{
-    border: 1px solid #777;
+#createLesson{
+    max-width: 50%;
+    min-width: 200px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 2%;
+    margin: 100px auto 0 auto;
 }
-.inPanel a{
-    text-decoration: none;
+#createLesson label{
+    padding-left: 5px;
+}
+#createLesson button{
+    margin: 10px;
+}
+.alert {
+    padding: 5px;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    z-index: 10;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+}
+th {
+    font-size: 30px;
+    padding: 15px 0;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #E5E7E9;
+  }
+td{
+    
+    text-align: left;
+    padding: 15px 0 15px 30px;
+}
+tr a{
     color: black;
 }
-.inPanel a:hover{
-    cursor: pointer;
-    color: #777;
+tr a:hover{
+    text-decoration: none;
+    color: gray;
+}
+.lessonList{
+    height: 350px;
+    overflow: auto;
+}
+.form-select{
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.form-select:focus{
+    outline: none;
+}
+.adminBtn{
+    margin-left: 5%;
 }

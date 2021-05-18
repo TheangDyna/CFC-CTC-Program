@@ -18,7 +18,7 @@ img{
     margin: 10px 0;
 }
 .signin{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }
 label{
@@ -26,4 +26,15 @@ label{
 }
 button{
     margin: 10px;
+}
+.alert {
+    padding: 5px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
 }

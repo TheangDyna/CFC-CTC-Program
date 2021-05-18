@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFC ICT Program</title>
+    <title>Lesson Slide</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <link rel="stylesheet" href="./Css/slide.css" type="text/css">
+    <script src="./Js/index.js"></script>
 </head>
-<body>
+<body onload="checkAdmin(); displaySlide(); return false;">
     <img src="./Img/logo.png" class="mx-auto d-block" alt="logo">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,18 +29,16 @@
                   Course
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="slide.html">Lesson Slide</a>
-                    <a class="dropdown-item" href="video.html">Lesson Video</a>
-                    <a class="dropdown-item" href="Challenge.html">Lesson Challenge</a>
+                  <a class="dropdown-item" href="slide.html">Lesson Slide</a>
+                  <a class="dropdown-item" href="video.html">Lesson Video</a>
+                  <a class="dropdown-item" href="Challenge.html">Lesson Challenge</a>
               </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 School Site
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Hun Sen Prasat Bakong High School</a>
                 <a class="dropdown-item" href="#">Aranh Sakor CFC High School</a>
-                <a class="dropdown-item" href="#">Bakong Motwani JHS</a>
                 <a class="dropdown-item" href="#">Aranh Cuthbert CFC ICT Program</a>
               </div>
             </li>
@@ -58,95 +56,105 @@
         </div>
       </nav>
       <div class="main">
-          <div class="row ">
-            <div class="col-sm-4">
-              <div class="tab">
-                <button class="tablinks" onclick="openCourse(event, 'Computer')" id="defaultOpen">Computer Basic</button>
-                <button class="tablinks" onclick="openCourse(event, 'Microsoft')">Microsoft Office</button>
-                <button class="tablinks" onclick="openCourse(event, 'Living')">Living In An Online World</button>
-                <button class="tablinks" onclick="openCourse(event, 'Game')">Game Development</button>
-                <button class="tablinks" onclick="openCourse(event, 'Global')">Global Challenge</button>
+        <div id="courseBox">
+          <div align="center" style="margin-bottom: 70px;"> <h1>Slide Course</h1></div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="courseImg" style="background-image:url(https://nebulas-it.com/wp-content/uploads/2017/03/1.png);"></div>
+                <div class="title">Computer Basic</div>
               </div>
-            </div>
-            <div class="col-sm-8">
-              <div id="Computer" class="tabcontent">
-                <button class="accordionSection">Computer Hardware and Software</button>
-                <div class="panel">
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1yL-x3avbhdxg-0pjPHCK33FvLHFamtq6/edit#slide=id.p1" target="_blank" name="computer">Computer Hardware and Software</a>
-                  </div>
-                </div>
-
-                <button class="accordionSection">Practice on Typing</button>
-                <div class="panel">
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1EIACUxdmptrIONIBjo4a57gAhIBAiLw9/edit#slide=id.p1" target="_blank" name="computer">Practice on Typing</a>
-                  </div>
-                </div>
-
-                <button class="accordionSection">Microsoft Office Word</button>
-                <div class="panel">
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1-Cz2MerShIIvxXwgDNjGa1eqLRVqbVZK/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office Word</a>
-                  </div>
-                  <hr>
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1nKXsUa6zHOO_MJehNk74n2L-cxiIPdBUVNlUg5IaccA/edit#slide=id.p" target="_blank" name="computer">Microsoft Office Word 2</a>
-                  </div>
-                </div>
-                <button class="accordionSection">Microsoft Office Excel</button>
-                <div class="panel">
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1sNXKHbVhpchtL0B0I5Z8RY1HLWXtpTmu/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office Excel</a>
-                  </div>
-                  <hr>
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1qEVXvjzu6qHUaz6lzdepQJoXpB-xFxZFIUxz_tjE6i8/edit#slide=id.p" target="_blank" name="computer">Microsoft Office Excel 2</a>
-                  </div>
-                </div>
-
-                <button class="accordionSection">Microsoft Office PowerPoint</button>
-                <div class="panel">
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1Fu69MGUbJcZZTEpKWQzINUVMA6orLfVI/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office PowerPoint</a>
-                  </div>
-                  <hr>
-                  <div class="inPanel">
-                    <i class="fas fa-desktop"></i>
-                    <a href="https://docs.google.com/presentation/d/1JIbCL73Od3zoKLHAqEbM3t4ARAHcnUjAwrWGC2igbmk/edit#slide=id.p1" target="_blank" name="computer">Microsoft Office PowerPoint 2</a>
-                  </div>
-                </div>
-              </div>
-              
-              <div id="Microsoft" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p> 
-              </div>
-              
-              <div id="Living" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
-              </div>
-
-              <div id="Game" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
-              </div>
-
-              <div id="Global" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+              <div class="col-sm-6">
+                  <table id="computer"></table>
               </div>
             </div>
           </div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="courseImg" style="background-image:url(https://cdn.cultofmac.com/wp-content/uploads/2019/08/Pay-What-You-Want-Essential-Microsoft-Office-2019-Bundle.jpg);"></div>
+                <div class="title">Microsoft Office</div>
+              </div>
+              <div class="col-sm-6">
+                <table id="microsoft"></table>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="courseImg" style="background-image:url(https://cdn.techjuice.pk/wp-content/uploads/2021/04/sale_19272_primary_image_wide-100801293-large.jpg);"></div>
+                <div class="title">Microsoft Office Advane</div>
+              </div>
+              <div class="col-sm-6">
+                <table id="microsoftAdvane"></table>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="courseImg" style="background-image:url(https://reputationtoday.in/wp-content/uploads/2020/03/living-in-the-same-global-village-maria-gamboa-image-2-hand.jpg);"></div>
+                <div class="title">Living in Online World</div>
+              </div>
+              <div class="col-sm-6">
+                <table id="living"></table>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="courseImg" style="background-image:url(https://itchronicles.com/wp-content/uploads/2021/04/Optimized-Illustration-from-Adobe-Stock-for-ITC-Post-on-AI-in-Game-Development-scaled.jpeg);"></div>
+                <div class="title">Game Development</div>
+              </div>
+              <div class="col-sm-6">
+                <table id="game"></table>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="courseImg" style="background-image:url(http://memoori.com/wp-content/uploads/2016/06/Smart-City-2.0.jpg);"></div>
+                <div class="title">Global Challenge</div>
+              </div>
+              <div class="col-sm-6">
+                <table id="global"></table>
+              </div>
+            </div>
+          </div>
+
+        <div id="createLesson">
+          <h1 align="center" style="margin-bottom: 50px;">Create New Slide Lesson</h1>
+          <form action="#"   id="createL" onsubmit="addlessonSlide(); return false;">
+            <div class="form-group">
+              <label for="seleteId">Choose a Course</label>
+              <select class="form-select" aria-label="Default select example" name="seleteId" required>
+                <option selected>Choose a Course ...</option>
+                <option value="computer">Computer Basic</option>
+                <option value="microsoft">Microsoft Office</option>
+                <option value="microsoftAdvane">Microsoft Office Advane</option>
+                <option value="living">Living in an Online World</option>
+                <option value="game">Game Development</option>
+                <option value="global">Global Challenge</option>
+              </select>
+            </div>
+              <div class="form-group">
+                <label for="titleL">Lesson's Title</label>
+                <input type="text" class="form-control" id="titleL" placeholder="Enter title" name="titleL" required>
+              </div>
+              <div class="form-group">
+                  <label for="urlL">Lesson's URL</label>
+                  <input type="url" class="form-control" id="urlL" placeholder="Enter URL" name="urlL" required>
+                </div>
+              <div class="form-group" align="center">
+                <button type="reset" class="btn btn-primary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Create</button>
+              </div>
+        </div>
+
+
       </div>
 </body>
-<script src="./Js/slide.js"></script>
 </html>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./Css/index.css" type="text/css">
     <script src="./Js/index.js"></script>
 </head>
-<body>
+<body onload="setAdmin(); return false;">
     <div class="container-fluid">
         <div>
             <img src="./Img/logo.png" class="mx-auto d-block" alt="Logo">
@@ -23,11 +23,11 @@
         <form action="#" onsubmit="signin(); return false;" id="signin">
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
           </div>
           <div class="form-group">
             <label for="pswd">Password:</label>
-            <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd">
+            <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd" required>
           </div>
           <div class="form-group" align="center">
             <button type="reset" class="btn btn-primary">Cancel</button>
@@ -36,6 +36,7 @@
           </div>
           <div class="form-group" align="center">
             <p>Don't have an account? <a href="signup.html" target="_self">SingUp Now</a></p>
+            <p>Forget password? <a href="reset.html" target="_self">Reset Now</a></p>
           </div>
         </form>
       </div> 

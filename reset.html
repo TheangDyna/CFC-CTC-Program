@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./Css/signup.css" type="text/css">
+    <link rel="stylesheet" href="./Css/reset.css" type="text/css">
     <script src="./Js/index.js"></script>
 </head>
 <body>
@@ -18,9 +18,9 @@
             <img src="./Img/logo.png" class="mx-auto d-block" alt="Logo">
         </div>
         <h3 align="center">CFC ICT Program</h3>
-        <p align="center" class="signup">Sign Up</p>
+        <p align="center" class="reset">Reset Password</p>
         <br>
-        <form action="#" onsubmit="signup(); return false;" id="signup">
+        <form action="#" onsubmit="resetPassword(); return false;" id="reset">
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
@@ -34,13 +34,13 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-            </div>
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+              </div>
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  <label for="pswd">Password:</label>
+                  <label for="pswd">New Password:</label>
                   <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd" required>
                 </div>
                 <div class="col-sm-6">
@@ -50,10 +50,11 @@
             </div>
             <div class="form-group" align="center">
             <button type="reset" class="btn btn-primary">Cancel</button>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" class="btn btn-primary">Comfirm</button>
             
           </div>
           <div class="form-group" align="center">
+            <p>Don't have an account? <a href="signup.html" target="_self">SingUp Now</a></p>
             <p>Already have an account? <a href="index.html" target="_self">SingIn Now</a></p>
           </div>
         </form>
