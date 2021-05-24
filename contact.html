@@ -10,10 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
-    <link rel="stylesheet" href="./Css/home.css" type="text/css">
+    <link rel="stylesheet" href="./Css/contact.css" type="text/css">
     <script src="./Js/index.js"></script>
 </head>
-<body  onload="checkHome(); displayProfile(); homeSlide(); return false;">
+<body  onload="displayProfile(); return false;">
     <img src="./Img/logo.png" class="mx-auto d-block" alt="logo">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="home.html" title="Go Home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
@@ -45,7 +45,7 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html" title="Go to About">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  active">
                 <a class="nav-link" href="contact.html" title="Go to Contact Us">Contact Us</a>
               </li>
           </ul>
@@ -60,80 +60,35 @@
         </div>
       </nav>
       <div class="main">
-        <div class="row row1">
+        <div class="row">
           <div class="col-lg-6">
-            <div class="describe" style="padding: 30px;">
-            <h1> <b>CFC ICT Educational Program</b></h1> <br><br>
-            Welcome to the Caring for Cambodia ICT Educational Program website! Here you will find information on all the courses we offer, as well as schedules, resources and policies, and the latest announcements so you always know what's in the news relating to ICT. You can also access updated learning materials for distant learning at this website. Please feel free to contact us for any questions or comments. Happy learnings!
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="slideshow-container">
-
-              <div class="mySlides fade">
-                <img src="./Img/logo1.png">
-                <div class="text"><b>Caring for Cambodia</b></div>
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="./Img/slideshow1.png">
-                <div class="text"><b>Computer Basic</b></div>
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./Img/slideshow3.jpg">
-                <div class="text"><b>Living in an Online World</b></div>
-              </div>
-
-              <div class="mySlides fade">
-                <img src="./Img/slideshow4.jpg">
-                <div class="text"><b>Microsoft Office</b></div>
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="./Img/slideshow8.jpg">
-                <div class="text"><b>Microsoft Office Advane</b></div>
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="./Img/slideshow7.png">
-                <div class="text"><b>Game Development</b></div>
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="./Img/slideshow6.jpg">
-                <div class="text"><b>Global Challenge</b></div>
-              </div>
-              
-              
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span>
-                <span class="dot"></span> 
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+              <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.6590961343!2d103.84748431476035!3d13.309223010980947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311019a3422af079%3A0xc3ec604987f983cb!2sAranh%20Sakor%20Cuthbert%20Primary%20and%20Junoir%20High%20School!5e0!3m2!1sen!2skh!4v1621865397103!5m2!1sen!2skh" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
           </div>
-        </div>
-          <div id="favoriteTool">
-            <h1 align="center" style="margin-bottom: 70px; margin-top: 70px;"><b>My Favorite</b></h1>
-            <div class="section">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="courseImg" style="background-image:url(https://www.bhavyabharath.com/wp-content/uploads/2020/04/distance-learning.jpg);"></div>
-                  <div class="title"><b>Favorite Lesson</b></div>
+          <div class="col-lg-6" style="padding: 50px;">
+            <form action="#">
+                <h1 align="center"><b>Contact Us</b></h1>
+                <br>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name..." name="lname" required>
+                  </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email..." name="email" required>
+                  </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" placeholder="Enter message..." rows="3"></textarea>
                 </div>
-                <div class="col-sm-6">
-                    <table id="favorite"></table>
+                <div class="form-group" align="center">
+                  <button type="reset" class="btn btn-primary">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Send</button>
                 </div>
-              </div>
-            </div>
-        </div>
+              </form>
+          </div>
+      </div>
       </div>
       <footer class="foot">
         <div class="row">

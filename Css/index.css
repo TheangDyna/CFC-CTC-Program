@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-family: 'Viga','Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
 }
 .container-fluid{
     max-width: 400px;
@@ -37,4 +37,7 @@ button{
     opacity: 1;
     transition: opacity 0.6s;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}
+input[type=checkbox]{
+    margin-left: 10px;
 }

@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Viga','Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}
+.mx-auto{
+    padding: 10px 0;
+    height: 100px;
+}
+.sticky-top{
+    box-shadow: 0 5px 5px black;
+    z-index: 9;
+}
+.collapse ul li a{
+    margin-right: 30px;
+}
+.main
+{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.row{
+    margin: 0;
+}
+.col-lg-6{
+    padding: 0;
+}
+.profile{
+    height: 50px;
+    padding: 0 20px;
+}
+#sex{
+    height: 50px;
+    width: 50px;
+    float: right;
+}
+#sex img{
+    height: 100%;
+    width: 100%;
+}
+#name{
+    height: 100%;
+    float: right;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 10px;
+}
+.foot{
+    width: 100%;
+    background: #3A3A3A;
+    padding: 20px 20px 0 20px;
+    margin-top: 100px;
+}
+.foot a:hover{
+    text-decoration: none;
+    opacity: .7;
+}
+.foot ul{
+    padding-left: 20px;
+}
+.foot p{
+    color: white;
+}
+.col-sm-4{
+    padding-left: 50px;
+    min-width: 300px;
+}
+hr{
+    margin: 1px;
+}
+label{
+    padding-left: 5px;
+}
+button{
+    margin: 20px 10px 5px 10px;
+}
+.row{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

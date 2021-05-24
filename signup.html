@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFC ICT Program</title>
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
     <link rel="stylesheet" href="./Css/signup.css" type="text/css">
     <script src="./Js/index.js"></script>
 </head>
@@ -17,36 +18,53 @@
         <div>
             <img src="./Img/logo.png" class="mx-auto d-block" alt="Logo">
         </div>
-        <h3 align="center">CFC ICT Program</h3>
-        <p align="center" class="signup">Sign Up</p>
+        <h3 align="center"><b>CFC ICT Program</b></h3>
+        <p align="center" class="signup"><b>Sign Up</b></p>
         <br>
         <form action="#" onsubmit="signup(); return false;" id="signup">
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  <label for="fname">First Name:</label>
-                  <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+                  <label for="fname">First Name</label>
+                  <input type="text" class="form-control" id="fname" placeholder="Enter First Name..." name="fname" required>
                 </div>
                 <div class="col-sm-6">
-                  <label for="lname">Last Name:</label>
-                  <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
+                  <label for="lname">Last Name</label>
+                  <input type="text" class="form-control" id="lname" placeholder="Enter Last Name..." name="lname" required>
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio1">
+                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png" checked>Male
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio2">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png">Female
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email..." name="email" required>
             </div>
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  <label for="pswd">Password:</label>
-                  <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd" required>
+                  <label for="pswd">Password</label>
+                  <input type="password" class="form-control" id="pswd" placeholder="Enter password..." name="pswd" required>
                 </div>
                 <div class="col-sm-6">
-                  <label for="cpswd">Confirm:</label>
-                  <input type="password" class="form-control" id="cpswd" placeholder="Enter Confirm" name="cpswd" required>
+                  <label for="cpswd">Confirm Password</label>
+                  <input type="password" class="form-control" id="cpswd" placeholder="Enter Confirm..." name="cpswd" required>
                 </div>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <input type="checkbox" onclick="showpswd()" name="spswd">
+              <label for="spswd">Show Password</label>
             </div>
             <div class="form-group" align="center">
             <button type="reset" class="btn btn-primary">Cancel</button>

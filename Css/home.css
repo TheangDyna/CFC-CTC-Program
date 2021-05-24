@@ -1,10 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-}
-body{
-    height: 1500px;
+    font-family: 'Viga','Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
 }
 .mx-auto{
     padding: 10px 0;
@@ -12,12 +9,198 @@ body{
 }
 .sticky-top{
     box-shadow: 0 5px 5px black;
+    z-index: 9;
 }
 .collapse ul li a{
     margin-right: 30px;
 }
 .main
 {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+}
+.row{
+    margin: 0;
+}
+.col-sm-6{
+    padding: 0;
+    height: 450px;
+    overflow: auto;
+}
+.section{
+    box-shadow: 2px 5px 8px 5px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 0;
+}
+.courseImg{
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+
+} 
+.title{
+    padding: 10px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background: #E5E7E9;
+    color: black;
+    overflow: hidden;
+}
+.alert {
+    padding: 5px;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    z-index: 10;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+}
+th {
+    font-size: 30px;
+    padding: 15px 0;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #E5E7E9;
+  }
+td{
+    
+    text-align: left;
+    padding: 15px 0 15px 30px;
+}
+tr a{
+    color: black;
+}
+tr a:hover{
+    text-decoration: none;
+    color: gray;
+}
+.lessonList{
+    height: 350px;
+    overflow: auto;
+}
+.favoriteBtn{
+    margin-left: 5%;
+}
+.profile{
+    height: 50px;
+    padding: 0 20px;
+}
+#sex{
+    height: 50px;
+    width: 50px;
+    float: right;
+}
+#sex img{
+    height: 100%;
+    width: 100%;
+}
+#name{
+    height: 100%;
+    float: right;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 10px;
+}
+.row1 {
+    margin-top: 100px;
+    box-shadow: 2px 5px 8px 5px rgba(0,0,0,0.2);
+}
+.row1 .col-lg-6{
+    padding: 0;
+    height: 450px;
+    overflow: auto;
+}
+.describe{
+    font-size: 20px;
+    padding-right: 15px;
+}
+.mySlides {
+  width: 100%;
+  height: 400px;
+}
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease;
+}
+
+.activeDot {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.foot{
+    width: 100%;
+    background: #3A3A3A;
+    padding: 20px 20px 0 20px;
+    margin-top: 100px;
+}
+.foot a:hover{
+    text-decoration: none;
+    opacity: .7;
+}
+.foot ul{
+    padding-left: 20px;
+}
+.foot p{
+    color: white;
+}
+.col-sm-4{
+    padding-left: 50px;
+    min-width: 300px;
+}
+hr{
+    margin: 1px;
 }
