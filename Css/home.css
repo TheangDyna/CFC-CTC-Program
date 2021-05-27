@@ -90,7 +90,8 @@ tr a:hover{
     overflow: auto;
 }
 .favoriteBtn{
-    margin-left: 5%;
+    float: right;
+    margin: 2% 5% 2% 0;
 }
 .profile{
     height: 50px;
@@ -108,7 +109,7 @@ tr a:hover{
 #name{
     height: 100%;
     float: right;
-    color: white;
+    color: black;
     text-align: center;
     line-height: 50px;
     padding-right: 10px;
@@ -183,19 +184,28 @@ tr a:hover{
 }
 .foot{
     width: 100%;
-    background: #3A3A3A;
-    padding: 20px 20px 0 20px;
+    background: #FF8000;
+    padding:  40px 40px 0 40px;
     margin-top: 100px;
+}
+.foot a{
+    color: black;
+}
+.btn-outline-success{
+    color: black;
+    border: black solid 2px;
+}
+.btn-outline-success:hover{
+    color: white;
+    background: black;
+    border: black solid 2px;
 }
 .foot a:hover{
     text-decoration: none;
     opacity: .7;
 }
-.foot ul{
-    padding-left: 20px;
-}
 .foot p{
-    color: white;
+    color: black;
 }
 .col-sm-4{
     padding-left: 50px;
@@ -203,4 +213,16 @@ tr a:hover{
 }
 hr{
     margin: 1px;
+}
+.bg-color{
+    background: #FF8000;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+   color: black;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.5);
 }

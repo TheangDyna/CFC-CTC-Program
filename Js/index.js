@@ -348,12 +348,6 @@ function displayGlobal(){
     create("global","globalLesson",deleteGlobalL);
 }
 
-function displayTest(){
-    displayMonthly();
-    displaySemester();
-    displayFinal();
-}
-
 function displaySlide(){
     displayComputer();
     displayMicrosoft();
@@ -381,7 +375,7 @@ function displayFavorite(){
         let titleL = document.createElement("td");
         titleL.innerHTML = arrFavorite[i].titleLesson;
         let deleteButton = document.createElement("button");
-        deleteButton.innerHTML = "Delete";
+        deleteButton.innerHTML = "Remove";
         deleteButton.onclick = function(){
             deleteFavorite(arrFavorite[i].titleLesson);
         }
@@ -453,7 +447,7 @@ function create(id,obj,fdelete){
         let titleL = document.createElement("td");
         titleL.innerHTML = objCourse[i].titleLesson;
         let deleteButton = document.createElement("button");
-        deleteButton.innerHTML = "Delete";
+        deleteButton.innerHTML = "Remove";
         deleteButton.onclick = function(){
            fdelete(objCourse[i].titleLesson);
         }
