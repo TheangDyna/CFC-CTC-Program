@@ -529,4 +529,11 @@ function showpswd(){
     } else {
         cpswd.type = "password";
     }
-  }
+}
+
+function signout(){
+    notifyMessage("Sign Out successful!", "#04AA6D");
+    setTimeout(()=>{
+        window.open('../index.html',"_self");
+    },2000);
+}

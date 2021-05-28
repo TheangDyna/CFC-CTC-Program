@@ -109,10 +109,22 @@ hr{
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color: black;
- }
- .navbar-dark .navbar-nav .nav-link {
+}
+.navbar-dark .navbar-nav .nav-link {
      color: white;
- }
- .navbar-dark .navbar-nav .nav-link:hover {
+}
+.navbar-dark .navbar-nav .nav-link:hover {
      color: rgba(255,255,255,.5);
- }
+}
+.alert {
+    padding: 5px;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    z-index: 10;
+}
