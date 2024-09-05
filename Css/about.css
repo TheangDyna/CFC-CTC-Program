@@ -79,6 +79,7 @@ hr{
 }
 .card img{
     height: 250px;
+    object-fit: cover;
 }
 .about-section{
     padding: 50px;
