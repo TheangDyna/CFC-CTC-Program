@@ -42,7 +42,7 @@ function signin(){
                 localStorage.setItem("currentUser",JSON.stringify(objUsers[i]));
                 notifyMessage("Sign In successful!", "#04AA6D");
                 setTimeout(()=>{
-                    window.open('../home.html',"_self");
+                    window.location.href = '/home.html';
                 },2000);
             }
         }  
